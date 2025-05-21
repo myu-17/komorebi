@@ -214,7 +214,7 @@ footer .header_right_bottom a {
     color: #fff;
     background-color: #ff9408;
     border-radius: 0.9vw;
-    box-shadow: 1px 1px 1px rgb(109, 68, 23, 0.55);
+    box-shadow: 0.1em 0.1em 0.2em rgb(109, 68, 23, 0.4);
     display: inline-block;
     font-size: 1.2vw;
     text-align: center;
@@ -341,7 +341,7 @@ header .header_right .header_right_bottom a:hover {
 
 /* お知らせ */
 .news_area {
-    width: 40%;
+    width: 37%;
 }
 
 .time_area {
@@ -536,7 +536,7 @@ main .news-area {
 }
 
 .medical_area ul {
-    gap: 4%;
+    column-gap: 35px;
 }
 
 .medical_area ul li {
@@ -1034,9 +1034,17 @@ footer .copy_right {
         width: 20px;
     }
 
+    .sp_bottom_menu li:nth-child(2) {
+        border: solid 0.05em;
+        border-top: #fff;
+        border-bottom: #fff;
+        color: #1a9a81;
+    }
+
+
     header {
         width: 100%;
-        height: 11vw;
+        height: 15vw;
         background-color: #fff;
         box-shadow: 0px 1px 3px #636363;
         display: flex;
@@ -1051,7 +1059,7 @@ footer .copy_right {
 
     header .header_container {
         justify-content: left;
-        width: 10%;
+        width: 16%;
         height: 100%;
         gap: 0%;
         margin-left: 5%;
@@ -1154,16 +1162,20 @@ footer .copy_right {
 
     .to_top_item {
         right: 4%;
-        bottom: 80px;
+        bottom: 85px;
         width: 10%;
+        min-width: 65px;
     }
 }
 
 /* ハンバーガーボタン */
 #hamburger {
+    position: fixed;
+    right: 0;
+    z-index: 10;
     background: url(../images/hmg_btn.svg)center center no-repeat;
-    width: 6%;
-    height: 50%;
+    width: 50px;
+    height: 50px;
     margin-right: 5%;
 }
 
@@ -1209,6 +1221,12 @@ footer .copy_right {
     padding: 20px 0;
     color: #fff;
     width: 100%;
+    font-size: clamp(15px, calc(2.545vw + 5.458px), 25px);
+}
+
+.sp-nav li span {
+    font-size: clamp(13px, calc(1.272vw + 8.229px), 18px);
+
 }
 
 /*基準となるli要素*/
@@ -1354,7 +1372,6 @@ footer .copy_right {
 
     .more_btn a {
         width: 40vw;
-        line-height: 2.7;
         border-radius: 5vw;
         font-size: 3vw;
     }
@@ -1444,7 +1461,7 @@ footer .copy_right {
     }
 
     footer .header_right_top p {
-        font-size: 3vw;
+        font-size: 2vw;
     }
 
     footer .header_right_top {
